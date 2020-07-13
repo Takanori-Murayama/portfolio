@@ -51,6 +51,21 @@ header {
 #head-p {
   display: inline;
 }
+#services {
+  color: greenyellow;
+}
+#works {
+  color: orange;
+}
+#skills {
+  color: beige;
+}
+#about_me {
+  color: blue;
+}
+#contact {
+  color: rgb(114, 67, 67);
+}
 .fab {
   color: #55acee;
   top: 70px;
@@ -238,14 +253,10 @@ header {
 .w {
   width: 32vw;
   height: 24vw;
-  min-width: 320px;
-  min-height: 240px;
 }
 .h {
   width: 24vw;
   height: 32vw;
-  min-width: 240px;
-  min-height: 320px;
 }
 #contact_conte {
   position: relative;
@@ -272,6 +283,101 @@ footer {
   margin: auto auto;
 }
 @media screen and (max-width: 480px) {
+  body {
+    background-image: url(../img/the_vietnam.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: olive;
+    font-family: ubuntu, Cambria, Cochin, Georgia, Times, "Times New Roman",
+      serif;
+  }
+  #head-p {
+    font-size: 1.5em;
+  }
+  #contact_conte {
+    position: relative;
+    width: 100%;
+    margin: 20vh auto;
+  }
+  #ifr_mail {
+    width: 100vw;
+    display: block;
+    margin: 50px auto 0 auto;
+    border-radius: 15px;
+    border: solid 3px;
+  }
+  h2 {
+    font-size: 10vw;
+    opacity: 1;
+    color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    display: block;
+    background-image: url(../img/the_vietnam.JPG);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-clip: text;
+    font-family: ubuntu, Cambria, Cochin, Georgia, Times, "Times New Roman",
+      serif;
+  }
+  #top_menu {
+    margin-top: 0;
+  }
+  #services {
+    color: white;
+  }
+  #works {
+    color: white;
+  }
+  #skills {
+    color: white;
+  }
+  #about_me {
+    color: white;
+  }
+  #contact {
+    color: white;
+  }
+  #ss {
+    color: beige;
+  }
+  #ww {
+    color: orange;
+  }
+  #sss {
+    color: greenyellow;
+  }
+  #aa {
+    color: brown;
+  }
+  #cc {
+    color: blue;
+  }
+  #skill-p {
+    color: white;
+  }
+  .w {
+    width: 96vw;
+    height: auto;
+  }
+  .h {
+    width: 48vw;
+    height: auto;
+  }
+  #contact_conte {
+    position: relative;
+    width: 100%;
+    margin: 20vh auto;
+  }
+  #ifr_mail {
+    display: block;
+    margin: 50px auto 0 auto;
+    border-radius: 15px;
+    border: solid 3px;
+    width: auto;
+  }
 }
 @media screen and (min-width: 480px) {
 }
