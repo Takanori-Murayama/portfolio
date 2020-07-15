@@ -35,3 +35,15 @@ function et(what) {
   var elemtop = rect.top + window.pageYOffset - 150;
   return elemtop;
 }
+
+var element = document.getElementById("h2_s");
+var outputElement = document.getElementById("output");
+addEventListener("scroll", function () {
+  var y = window.pageYOffset;
+  outputElement.innerHTML = "y=" + y + " et(s)=" + et(s);
+  if (y > et(s)) {
+    element.classList.add("main_anime");
+  } else {
+    return 0;
+  }
+});

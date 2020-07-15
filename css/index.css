@@ -3,6 +3,28 @@
   margin: 0;
   padding: 0;
 }
+
+.main_anime {
+  animation-name: fadein;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: initial;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translate3d(50px, 20px, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 body {
   background-image: url(../img/coffee.JPG);
   background-size: cover;
@@ -284,7 +306,7 @@ footer {
 }
 @media screen and (max-width: 480px) {
   body {
-    background-image: url(../img/the_vietnam.JPG);
+    background-image: url(../img/the_vietnam.gif);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -314,7 +336,7 @@ footer {
     background-color: rgba(0, 0, 0, 0);
     box-sizing: border-box;
     display: block;
-    background-image: url(../img/the_vietnam.]);
+    background-image: url(../img/the_vietnam.gif);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
