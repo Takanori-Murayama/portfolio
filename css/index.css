@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
@@ -306,8 +307,12 @@ footer {
 }
 @media screen and (max-width: 480px) {
   body {
+    position: absolute;
     background-image: url(../img/the_vietnam.gif);
     background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: olive;
