@@ -307,17 +307,25 @@ footer {
 }
 @media screen and (max-width: 480px) {
   body {
-    position: relative;
-    background-image: url(../img/the_vietnam.gif);
+    background: none;
     background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: olive;
     font-family: ubuntu, Cambria, Cochin, Georgia, Times, "Times New Roman",
       serif;
+  }
+  body::before {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    background: url(/img/the_vietnam.gif);
+    background-size: cover;
   }
   #head-p {
     font-size: 1.5em;
