@@ -36,11 +36,22 @@ function et(what) {
   return elemtop;
 }
 
-var element = document.getElementById("h2_s");
-var outputElement = document.getElementById("output");
 addEventListener("scroll", function () {
   var y = window.pageYOffset;
-  if (y > et(s)) {
+  if (y <= et(w) && y > et(s)) {
+    var element = document.getElementById("h2_s");
+    element.classList.add("main_anime");
+  } else if (y <= et(sk) && y > et(w)) {
+    var element = document.getElementById("h2_w");
+    element.classList.add("main_anime");
+  } else if (y <= et(p) && y > et(sk)) {
+    var element = document.getElementById("h2_ss");
+    element.classList.add("main_anime");
+  } else if (y <= et(c) && y > et(p)) {
+    var element = document.getElementById("h2_p");
+    element.classList.add("main_anime");
+  } else if (y > et(c)) {
+    var element = document.getElementById("h2_c");
     element.classList.add("main_anime");
   } else {
     return 0;
