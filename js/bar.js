@@ -46,7 +46,17 @@ addEventListener("scroll", function () {
     element.classList.add("main_anime");
   } else if (y <= et(p) && y > et(sk)) {
     var element = document.getElementById("h2_ss");
+    var element1 = document.getElementsByClassName("html");
+    var element2 = document.getElementsByClassName("css");
+    var element3 = document.getElementsByClassName("js");
+    var element4 = document.getElementsByClassName("gp");
+    var element5 = document.getElementsByClassName("rr");
     element.classList.add("main_anime");
+    element1[0].classList.add("bar_anime4");
+    element2[0].classList.add("bar_anime3");
+    element3[0].classList.add("bar_anime3");
+    element4[0].classList.add("bar_anime3");
+    element5[0].classList.add("bar_anime2");
   } else if (y <= et(c) && y > et(p)) {
     var element = document.getElementById("h2_p");
     element.classList.add("main_anime");
@@ -57,3 +67,14 @@ addEventListener("scroll", function () {
     return 0;
   }
 });
+
+function skillSet() {
+  var barInfo = document.getElementsByClassName("bar-info");
+  total = barInfo.data("total");
+  barInfo.css("width", total + "pt");
+
+  var barValue = document.getElementsByClassName("bar_value");
+  function each() {
+    for (let counter = 0; counter < 10; counter++) {}
+  }
+}

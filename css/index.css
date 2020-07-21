@@ -4,9 +4,6 @@
   margin: 0;
   padding: 0;
 }
-.pre-anime {
-  visibility: hidden;
-}
 .main_anime {
   visibility: visible;
   animation-name: fadein;
@@ -217,6 +214,9 @@ header {
   margin: 2vh auto 0 auto;
   padding: 1px;
 }
+
+/* skills*/
+
 #skills_conte {
   position: relative;
   width: 100%;
@@ -228,7 +228,75 @@ header {
   width: 60%;
   margin-top: 15px;
 }
+.bar_anime4 {
+  visibility: visible;
+  animation-name: barmove4;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.2s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
 
+@keyframes barmove4 {
+  0% {
+    width: 10%;
+  }
+  20% {
+    width: 1%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+.bar_anime3 {
+  visibility: visible;
+  animation-name: barmove3;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.2s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+
+@keyframes barmove3 {
+  0% {
+    width: 10%;
+  }
+  20% {
+    width: 1%;
+  }
+  100% {
+    width: 50%;
+  }
+}
+.bar_anime2 {
+  visibility: visible;
+  animation-name: barmove2;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-out;
+  animation-delay: 0.2s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: both;
+}
+
+@keyframes barmove2 {
+  0% {
+    width: 10%;
+  }
+  20% {
+    width: 1%;
+  }
+  100% {
+    width: 30%;
+  }
+}
+.bar_value {
+  text-align: right;
+}
 .bar {
   position: relative;
   width: 100%;
@@ -245,10 +313,9 @@ header {
   width: 10%;
   position: relative;
   height: 24px;
-  transition: width 3.3s ease-in-out;
 }
-.percent {
-  float: right;
+.skillicon {
+  position: static;
 }
 .html {
   background: linear-gradient(rgb(170 100 100), rgb(255 200 200)), red;
