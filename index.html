@@ -11,8 +11,19 @@
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <a href="https://icons8.com/icon/39867/gimp">GIMP icon by Icons8</a>
     <a href="https://icons8.com/icon/88414/ruby-gem">Ruby Gem icon by Icons8</a>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KDP42QM');</script>
+  <!-- End Google Tag Manager -->
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KDP42QM"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 <!--ヘッダー-->
     <header id="header">
       <h1 id="head-p">Portfolio <span style="font-size: x-small;color: grey;">By T.Murayama</span></h1>
@@ -121,22 +132,27 @@
     <article id="contact_conte">
       <h2 id="h2_c" class="">Contact</h2>
       <iframe id="ifr_mail" width="750px" height="1050px" src="https://docs.google.com/forms/d/e/1FAIpQLSd2Yx_chXzf9z4fSWVsauHnLpHHOTqwmYENJfT1OBe_94jljQ/viewform"></iframe>
-      <!--<form action="https://api.staticforms.xyz/submit" method="post">
-        <input type="text" name="name" placeholder="Your Name">
-        <input type="text" name="email" placeholder="Your Email" />
-        <textarea name="message"></textarea>
+      <form id="mailform" action="https://api.staticforms.xyz/submit" method="post">
+        <h4 id="form_contact_letter">CONTACT</h4>
+        <input class="forminput" id="mail_urname" type="text" name="name" placeholder="NAME">
+        <br><input class="forminput" id="mail_urmail" type="text" name="email" placeholder="E-MAIL" />
+        <br><textarea class="forminput" id="mail_message" rows="10" name="message" aria-multiline="true" placeholder="MESSAGE"></textarea>
         <input type="text" name="honeypot" style="display:none">
         <input type="hidden" name="accessKey" value="54fb4d2e-f4a3-4202-b004-1440994ec52e">
         <input type="hidden" name="subject" value="Contact us from - example.com" />
-        <input type="hidden" name="replyTo" value="@">
+        <input type="hidden" name="replyTo" value="program.tm.co@gmail.com">
         <input type="hidden" name="redirectTo" value="https://t-m-portfolio.herokuapp.com">
-        <input type="submit" value="Submit" />
-    </form>-->
+        <br>
+        <input id="send_btn"type="submit" value="SEND" />
+        <br><p6>※こちらのメッセージは<a href="https://www.staticforms.xyz/" target="_blank">STATIC FORMS</a>を利用しています。<a href="https://www.staticforms.xyz/privacy" target="_blank">Privacy Policy</a></p6>
+    </form>
     </article>
   </div>
 <!--フッター-->
     <footer>
       <a href="mailto:program.tm.co@gmail.com?body=【氏名】%0D%0A【ご連絡先】%0D%0A【内容】" id="mail">program.tm.co@gmail.com</a>
+      <br>
+      <p6>※ｸﾘｯｸするとﾒｰﾙﾌｫｰﾑが開きます。</p6>
     </footer>
 <!--javaScript-->
   </div>

@@ -364,18 +364,66 @@ header {
   border-radius: 15px;
   border: solid 3px;
 }
+form {
+  width: 70%;
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  margin: 10vh auto auto auto;
+  background-color: black;
+  border: white 3px;
+  border-radius: 10px;
+}
+.forminput[type="text"] {
+  margin: 3vh auto 1vh auto;
+  font: 15px/24px sans-serif;
+  box-sizing: border-box;
+  width: 90%;
+  padding: 0.3em;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  color: #aaaaaa;
+  border: 1px solid #1b2538;
+  border-radius: 4px;
+}
+.forminput[type="text"]:focus {
+  border: 1px solid #da3c41;
+  outline: none;
+  box-shadow: 0 0 5px 1px rgba(218, 60, 65, 0.5);
+}
+#mail_message {
+  width: 90%;
+  margin: 3vh auto 1vh auto;
+  font: 15px/24px sans-serif;
+}
+#send_btn {
+  width: 90%;
+  margin: 3vh auto 2vh auto;
+  font: 15px/24px sans-serif;
+}
+#form_contact_letter {
+  width: 90%;
+  margin: 3vh auto 1vh auto;
+  font: 15px/24px sans-serif;
+}
+
 footer {
-  display: flex;
+  display: block;
   width: 100%;
   background-color: black;
   height: 40px;
   position: relative;
   top: 100vh;
-  text-align: right;
+  text-align: center;
 }
 #mail {
   position: relative;
   margin: auto auto;
+}
+p6 {
+  font-size: xx-small;
+  font-weight: 500;
+  letter-spacing: -1px;
 }
 @media screen and (max-width: 480px) {
   body {
